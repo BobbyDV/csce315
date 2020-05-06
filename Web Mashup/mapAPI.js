@@ -254,7 +254,7 @@ function autocompleteSearch(map) {
 //weather api
 //gets the weather data from Open Weather Map and can be seen in console (inspect TraView when you run it through LiveServer)
 function weather(pos) {
-  var key = "332875fbfdf46186564bc3a29e86d00b";
+  var key = "";
 
   fetch(
     "http://api.openweathermap.org/data/2.5/forecast?q=" +
@@ -328,7 +328,7 @@ function weather(pos) {
 //Doesn't work yet
 function yelp(pos) {
   var API_key =
-    "iofVnHucxDoNF0Rvymw4HUfGHyBVPdYx4SUcI7n3DxMk8xZZockGQx941TSYF5kqUl_KQ_VGDCUagKoogJSY2V-6xAnX4zS1H1z9cbXjgu5dqXpM0YUZkWPffkyOXnYx";
+    "";
 
   var url =
     "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=restaurant&location=" +

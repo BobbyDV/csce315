@@ -4,4 +4,4 @@ TraView is a web mashup that uses 5 API's: Google Maps, Google Places, Yelp-Fusi
 give users a list of tourist attractions, restaurants, and the weather given a city, state, or country so that they may better
 plan out their vacations.
 
-For this project, I implemented all 5 API's using JavaScript and formatted them using CSS. I also did a majority of the website aesthetics.
+For this project, I implemented all 5 API's using JavaScript and most of the HTML/CSS.

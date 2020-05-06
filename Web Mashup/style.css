@@ -1,0 +1,425 @@
+/* Headers */
+header {
+  background-color: white;
+}
+
+h1 {
+  margin-top: 10px;
+  /* margin-left: 250px;
+    margin-right: 250px; */
+  margin-bottom: 10px;
+  font-family: "Verdana", sans-serif;
+  font-size: 50px;
+  color: #3a0101;
+}
+h2 {
+  font-family: "Verdana", sans-serif;
+  font-size: 28px;
+  color: black;
+  /*margin-left: 250px;
+    margin-right: 250px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-family: "Verdana", sans-serif;
+  font-size: 27px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body {
+  min-height: 100%;
+  padding-bottom: 100px;
+  background-color: whitesmoke;
+}
+
+p {
+  font-family: "Verdana", sans-serif;
+  font-size: 18px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div #tamu-logo {
+  width: 110px;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+/* The hero image */
+.hero {
+  /* Set a specific height and width */
+  height: 350px;
+  width: 100%;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: 0 -240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: 5em;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+/* Home Image */
+#home {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("Images/background4.jpg");
+}
+
+/* About Image */
+#about {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("Images/AboutHero3.jpg");
+
+  background-position: 0 -400px;
+}
+
+/* Contact Image */
+#contact {
+  background-image: url("Images/Contact.jpg");
+  height: 350px;
+  background-position: 0 -150px;
+}
+
+/* FAQ Image */
+#faq {
+  background-image: url("Images/background4.jpg");
+}
+
+.about-text,
+.contact-text,
+.faq-text {
+  margin-right: 200px;
+  margin-left: 10px;
+}
+
+.about-text p {
+  display: inline-flex;
+}
+
+.about-text p img {
+  width: 200px;
+}
+
+.faq-text ul {
+  font-family: "Verdana", sans-serif;
+  list-style-type: none;
+}
+
+.faq-text ul li {
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Verdana", sans-serif;
+  font-size: 22px;
+}
+
+/* navigation bar */
+nav ul {
+  list-style-type: none;
+  /* margin-left: 250px;
+    margin-right: 250px; */
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  font-family: "Verdana", sans-serif;
+  font-size: 23px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 12px;
+  text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+  color: grey;
+}
+.active {
+  border-bottom: 2px solid maroon;
+}
+
+/* API box format (NOT IMPLEMENTED YET BUT WILL HAVE TO BE)*/
+div.box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.box #map {
+  height: 500px;
+  width: 40%;
+  position: relative;
+}
+/* Weather Box */
+.weather {
+  width: 800px;
+  height: 395px;
+  border: 2px solid black;
+  position: relative;
+  left: 10px;
+  bottom: 150px;
+  display: flex;
+}
+
+.weather p {
+  color: black;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+}
+
+/* Individual Boxes in the Weather Box */
+.a,
+.e {
+  flex: 1;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+.b,
+.c,
+.d {
+  flex: 1;
+  padding: 5px 0px;
+  text-align: center;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+/* Copied original embedded css from Bobby */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#map {
+  /* Position the map correctly on the page */
+  height: 500px;
+  width: 40%;
+  position: relative;
+  /* top: 200px; */
+}
+
+/* For Google Places API */
+
+/* The title for the infowindow for the query */
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+/* The entire card */
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+  width: 60%;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+/* The buttons themselves */
+.pac-controls {
+  display: inline;
+  padding: 5px 10px;
+}
+
+/* Words next to buttons */
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* The user input field */
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 70%;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+/* Search Pagination */
+#right-panel {
+  font-family: "Roboto", "sans-serif";
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#right-panel select,
+#right-panel input {
+  font-size: 15px;
+}
+
+#right-panel select {
+  width: 100%;
+}
+
+#right-panel i {
+  font-size: 12px;
+}
+
+#right-panel {
+  font-family: Arial, Helvetica, sans-serif;
+  /* position: absolute; */
+  right: 5px;
+  top: 60%;
+  margin-top: -195px;
+  height: 380px;
+  width: 250px;
+  padding: 5px;
+  z-index: 5;
+  border: 1px solid #999;
+  background: #fff;
+  position: relative;
+  left: 650px;
+  bottom: 845px;
+}
+
+.pagination ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 271px;
+  width: 250px;
+  overflow-y: scroll;
+}
+
+.pagination li {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.pagination li:nth-child(odd) {
+  background-color: #fcfcfc;
+}
+
+#more {
+  width: 100%;
+  margin: 5px 0 0 0;
+}
+
+/* Yelp Formatting */
+.yelp h3 {
+  text-align: start;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 0;
+  display: inline-block;
+  margin-bottom: -5px;
+}
+
+.yelp p {
+  display: inline-block;
+  text-align: right;
+  font-size: 12px;
+  padding-top: 0;
+  margin-top: -5px;
+}
+
+.yelp #yelp-panel {
+  font-family: "Roboto", "sans-serif";
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.yelp #yelp-panel {
+  font-family: Arial, Helvetica, sans-serif;
+  right: 5px;
+  top: 60%;
+  margin-top: -195px;
+  height: 380px;
+  width: 400px;
+  padding: 5px;
+  z-index: 5;
+  border: 1px solid #999;
+  background: #fff;
+  position: relative;
+  left: 1000px;
+  bottom: 1043px;
+  display: inline-block;
+}
+
+.yelp img {
+  float: left;
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+}
+
+.yelp ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 325px;
+  width: 400px;
+  overflow-y: scroll;
+}
+
+.yelp li {
+  background-color: #f1f1f1;
+  padding: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.yelp li:nth-child(odd) {
+  background-color: #fcfcfc;
+}
